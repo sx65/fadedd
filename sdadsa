@@ -21,10 +21,10 @@ UserInputService.InputBegan:connect(function(Key)
         if Settings.isLocked then
             Settings.isLocked = false
             if Settings.WebhookMode then
-                sendMessage("Puppy Ware: Unlocked")
+                sendMessage("Faded: Unlocked")
             end
             if Settings.NotificationMode then
-                notify("Puppy Ware", "Unlocked", 1)
+                notify("Faded", "Unlocked", 1)
             end
             Plr = LocalPlayer
         else
@@ -34,7 +34,7 @@ UserInputService.InputBegan:connect(function(Key)
                 sendMessage("Locked Onnto: "..tostring(Plr.DisplayName).." Aka "..Plr.Name)
             end
             if Settings.NotificationMode then
-                notify("Puppy Ware", "Locked Onto: "..tostring(Plr.DisplayName).."", 1)
+                notify("Faded", "Locked Onto: "..tostring(Plr.DisplayName).."", 1)
             end
             end
         end
