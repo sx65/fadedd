@@ -1,5 +1,3 @@
--- // Hook
-
 local __index
 __index = hookmetamethod(game, "__index", function(t, k)
 -- // Check if it trying to get our mouse's hit or target and see if we can use it
@@ -15,3 +13,7 @@ if (t:IsA("Mouse") and (k == "Hit" or k == "Target") and checkSilentAim()) then
         return (k == "Hit" and Hit or "Head")
     end
 end
+
+-- // Return
+return __index(t, k)
+end)
