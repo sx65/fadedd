@@ -44,7 +44,7 @@ local FadedASS = {
     ShowFOV = true,
     FOV = 60,
     FOVSides = 360,
-    Thickness = 2,
+    Thickness = 1,
     Filled = false,
     FOVColour = Color3fromRGB(255, 255, 255),
 
