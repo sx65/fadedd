@@ -1,6 +1,6 @@
 -- // Dependencies
 _G.PRED = 0.037
-local FadedASS = loadstring(game:HttpGet("https://ghostbin.com/pMw9P/raw"))()
+local FadedASS = loadstring(game:HttpGet("https://raw.githubusercontent.com/sx65/fadedd/main/sadsd"))()
 FadedASS.TeamCheck(false)
 FadedASS.ShowFOV = false
 FadedASS.FOV = 1
