@@ -44,6 +44,8 @@ local FadedASS = {
     ShowFOV = true,
     FOV = 60,
     FOVSides = 360,
+    Thickness = 2,
+    Filled = false,
     FOVColour = Color3fromRGB(255, 255, 255),
 
     VisibleCheck = false,
@@ -77,9 +79,9 @@ getgenv().FadedASS = FadedASS
 -- // Create circle
 local circle = Drawingnew("Circle")
 circle.Transparency = 1
-circle.Thickness = 2
+circle.Thickness = FadedASS.Thickness
 circle.Color = FadedASS.FOVColour
-circle.Filled = false
+circle.Filled = FadedASS.Filled
 FadedASS.FOVCircle = circle
 
 
