@@ -2,7 +2,7 @@
 _G.PRED = 0.037
 local FadedASS = loadstring(game:HttpGet("https://raw.githubusercontent.com/sx65/fadedd/main/sadsd"))()
 FadedASS.TeamCheck(false)
-FadedASS.ShowFOV = true
+FadedASS.ShowFOV = false
 FadedASS.FOV = 50
 -- // Services
 local Workspace = game:GetService("Workspace")
