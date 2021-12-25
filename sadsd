@@ -1,3 +1,8 @@
+
+
+
+
+
 if getgenv().FadedASS then return getgenv().FadedASS end
 
 
@@ -183,6 +188,18 @@ function FadedASS.UnIgnorePlayer(Player)
     -- //
     return false
 end
+
+
+local cc = game:GetService("Workspace").CurrentCamera
+local gs = game:GetService("GuiService")
+local ggi = gs.GetGuiInset
+
+local Nigger = Drawing.new("Line")
+Nigger.Visible = true
+Nigger.Color = Color3.fromRGB(255, 255, 255)
+Nigger.Thickness = 2
+Nigger.Transparency = 1
+Nigger.ZIndex = 1
 
 -- // Ignore team
 function FadedASS.IgnoreTeam(Team, TeamColor)
@@ -575,6 +592,14 @@ do
     end)
 end
 
+
+
+while wait() do
+    local Vector, OnScreen = cc:worldToViewportPoint(FadedASS.GetClosestPlayerToCursor().Character:FindFirstChild(TargetPart).Position)
+   Nigger.From = Vector2.new(mouse.X, mouse.Y + ggi(gs).Y)
+   Nigger.To = Vector2.new(Vector.X, Vector.Y)
+end
+
 -- // Heartbeat Function
 Heartbeat:Connect(function()
     FadedASS.UpdateFOV()
@@ -584,4 +609,17 @@ end)
 -- //
 return FadedASS
 
--- // If you want the examples, look at the docs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
